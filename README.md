@@ -27,13 +27,13 @@ De un mapa de puntos ruidoso, directo de la cosechadora, a zonas de manejo delim
 
 ## 1. Limpieza de outliers
 
-| Rinde Original (con outliers) | Rinde Limpio (criterio Balzarini) |
-|---|---|
-| Puntos sueltos muy por arriba y por abajo del rango normal | Distribución mucho más pareja, sin valores extremos |
+Se evalúa qué tan lejos está cada punto del comportamiento general de la distribución (criterio Balzarini). Si un punto es estadísticamente demasiado raro, se descarta bajo el supuesto de que corresponde a un error de máquina y no a una variación real de rendimiento.
 
 <p align="center"><img src="capturas/boxplot_outliers.png" width="600"/></p>
 
-Se evalúa qué tan lejos está cada punto del comportamiento general de la distribución (criterio Balzarini). Si un punto es estadísticamente demasiado raro, se descarta bajo el supuesto de que corresponde a un error de máquina y no a una variación real de rendimiento.
+| Rinde Original (con outliers) | Rinde Limpio (criterio Balzarini) |
+|---|---|
+| Puntos sueltos muy por arriba y por abajo del rango normal | Distribución mucho más pareja, sin valores extremos |
 
 ---
 
