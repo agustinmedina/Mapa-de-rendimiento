@@ -29,12 +29,11 @@ De un mapa de puntos ruidoso, directo de la cosechadora, a zonas de manejo delim
 
 Se evalúa qué tan lejos está cada punto del comportamiento general de la distribución (criterio Balzarini). Si un punto es estadísticamente demasiado raro, se descarta bajo el supuesto de que corresponde a un error de máquina y no a una variación real de rendimiento.
 
-![Boxplot comparación](capturas/boxplot_outliers.png)
-
-
 | Rinde Original (con outliers) | Rinde Limpio (criterio Balzarini) |
 |---|---|
 | Puntos sueltos muy por arriba y por abajo del rango normal | Distribución mucho más pareja, sin valores extremos |
+
+<p align="center"><img src="capturas/boxplot_outliers.png" width="600"/></p>
 
 ---
 
@@ -42,7 +41,7 @@ Se evalúa qué tan lejos está cada punto del comportamiento general de la dist
 
 Antes de interpolar, se necesita entender **cómo varía el rinde en función de la distancia** entre puntos del mapa crudo. Para eso se ajusta un semivariograma (modelo esférico), que muestra que la semivarianza crece con la distancia hasta estabilizarse en una meseta (*sill*) — es decir, a partir de cierta distancia los puntos dejan de estar espacialmente correlacionados.
 
-![Variograma](capturas/variograma.png)
+<p align="center"><img src="capturas/variograma.png" width="600"/></p>
 
 Este ajuste es el insumo necesario para el paso siguiente: el kriging.
 
@@ -68,13 +67,13 @@ Una vez generado el mapa de rinde limpio, se lo compara contra imágenes satelit
 
 ### NDVI vs Rinde
 
-![NDVI vs Rinde](capturas/ndvi_vs_rinde.png)
+<p align="center"><img src="capturas/ndvi_vs_rinde.png" width="500"/></p>
 
 - **R² = 0.108** → el NDVI explica ~10% de la variación del rinde en este lote.
 
 ### GNDVI vs Rinde
 
-![GNDVI vs Rinde](capturas/gndvi_vs_rinde.png)
+<p align="center"><img src="capturas/gndvi_vs_rinde.png" width="500"/></p>
 
 - **R² = 0.125**
 - Fórmula: `GNDVI = (NIR − Verde) / (NIR + Verde)`
