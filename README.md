@@ -19,7 +19,7 @@ Este repositorio documenta el flujo completo:
 
 | Mapa de rinde crudo | Mapa de rinde ambientado (zonas de manejo) |
 |---|---|
-| ![Mapa crudo](capturas/mapa_crudo.png) | ![Mapa ambientado](capturas/mapa_ambientado.png) |
+| <img src="capturas/mapa_crudo.png" width="450"/> | <img src="capturas/mapa_ambientado.png" width="450"/> |
 
 De un mapa de puntos ruidoso, directo de la cosechadora, a zonas de manejo delimitadas y listas para tomar decisiones agronómicas. Los pasos de abajo explican cómo se llega de uno al otro.
 
@@ -29,11 +29,12 @@ De un mapa de puntos ruidoso, directo de la cosechadora, a zonas de manejo delim
 
 Se evalúa qué tan lejos está cada punto del comportamiento general de la distribución (criterio Balzarini). Si un punto es estadísticamente demasiado raro, se descarta bajo el supuesto de que corresponde a un error de máquina y no a una variación real de rendimiento.
 
+![Boxplot comparación](capturas/boxplot_outliers.png)
+
+
 | Rinde Original (con outliers) | Rinde Limpio (criterio Balzarini) |
 |---|---|
 | Puntos sueltos muy por arriba y por abajo del rango normal | Distribución mucho más pareja, sin valores extremos |
-
-![Boxplot comparación](capturas/boxplot_outliers.png)
 
 ---
 
